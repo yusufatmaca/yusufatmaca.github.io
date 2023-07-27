@@ -1,0 +1,165 @@
+body {
+    font-family: 'Playfair Display', serif;
+    ;
+    color: black;
+}
+
+nav {
+    margin-top: 40px;
+}
+
+.social-medias {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 75px;
+}
+
+.twitter,
+.mail,
+.medium,
+.instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    background-color: white;
+}
+
+.twitter-logo,
+.mail-logo,
+.medium-logo,
+.instagram-logo {
+    width: 25px;
+    margin-right: 25px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.8s;
+    position: relative;
+}
+
+.twitter-logo:hover,
+.mail-logo:hover,
+.medium-logo:hover,
+.instagram-logo:hover {
+    opacity: 1;
+}
+
+
+.twitter .tooltip,
+.mail .tooltip,
+.medium .tooltip,
+.instagram .tooltip {
+    font-size: 1px;
+    position: absolute;
+    opacity: 0;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 2px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    top: 75px;
+}
+
+.twitter:hover .tooltip,
+.mail:hover .tooltip,
+.medium:hover .tooltip,
+.instagram:hover .tooltip {
+    opacity: 1;
+}
+
+.twitter .tooltip {
+    right: 252px;
+}
+
+.mail .tooltip {
+    right: 197px;
+}
+
+.medium .tooltip {
+    right: 125px;
+}
+
+.instagram .tooltip {
+    right: 50px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu button {
+    border-style: none;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 25px;
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: 500;
+    transition: font-weight 0.15s;
+}
+
+.menu button:hover {
+    font-weight: 1000;
+}
+
+section {
+    font-family: Roboto;
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+article {
+    border: 3px solid rgb(147, 10, 10);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    padding: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 5px 10px;
+
+}
+
+span {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 500;
+    transition: font-weight 0.15s;
+}
+
+span:hover {
+    font-weight: 750;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.readmore {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+    font-size: 16px;
+    transition: color 0.25s;
+}
+
+a:hover {
+    color: black;
+}
