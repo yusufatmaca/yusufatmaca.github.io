@@ -127,6 +127,7 @@ article {
     position: relative;
     margin-bottom: 30px;
     box-shadow: 5px 10px;
+    transition: width 0.5s;
 
 }
 
@@ -162,4 +163,8 @@ a {
 
 a:hover {
     color: black;
+}
+
+article:hover {
+    width: 55%;
 }
