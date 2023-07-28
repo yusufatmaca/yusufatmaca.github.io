@@ -5,13 +5,23 @@ body {
 }
 
 nav {
-    margin-top: 40px;
+    margin-top: 50px;
+}
+
+.head-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.blog-title {
+    min-width: 350px;
+    margin-left: 75px;
+    font-style: italic;
 }
 
 .social-medias {
     display: flex;
-    justify-content: right;
-    margin-bottom: 75px;
 }
 
 .twitter,
@@ -109,12 +119,11 @@ nav {
 
 section {
     font-family: Roboto;
-    margin-top: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    margin-top: 75px;
 }
 
 article {
@@ -122,19 +131,17 @@ article {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    width: 750px;
+    max-width: 650px;
     padding: 25px;
     position: relative;
     margin-bottom: 30px;
     box-shadow: 5px 10px;
-    transition: width 0.5s;
-
+    transition: max-width 0.5s;
 }
-
 span {
     text-decoration: none;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
     font-weight: 500;
     transition: font-weight 0.15s;
@@ -156,15 +163,13 @@ p {
 
 a {
     text-decoration: none;
-    color: gray;
+    color: black;
     font-size: 16px;
-    transition: color 0.25s;
+    transition: color 0.25s, font-size 0.25s;
 }
 
 a:hover {
-    color: black;
+    color: rgb(147, 10, 10);
+    font-size: 20px;
 }
 
-article:hover {
-    width: 55%;
-}
