@@ -5,33 +5,64 @@ body {
   width: 50%;
 }
 
+.dark-mode {
+  background-color: #232323;
+  color: white;
+}
+
 header {
   display: flex;
   text-align: center;
   margin: auto;
-
+  flex-direction: column;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .description {
   text-align: left;
-  margin-left: 40px;
-  margin-top: -20px;
+}
+
+.name-surname {
+  margin-top: -1px;
 }
 
 address {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   text-align: left;
+
 }
 .my-picture {
-  width: 25%;
+  width: 125px;
+  margin-right: 25px;
 }
 
 a {
   text-decoration: none;
   font-style: normal;
+  color: #279EFF;
 }
 
+a:visited {
+  color: #1971b9;
+}
 nav {
   text-align: center;
+}
+
+.dark-theme-logo {
+  width: 25px;
+}
+
+button {
+  border-style: none;
+}
+
+.night-mode {
+  display: flex;
+  flex-direction: row-reverse;
 }

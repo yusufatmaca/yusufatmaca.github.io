@@ -8,8 +8,9 @@
 </head>
 <body>
   <header>
-    <img class="my-picture" src="profile-picture.jpg" alt="" />
-    <div class="title">
+    <div class="profile">
+      <img class="my-picture" src="profile-picture.jpg" alt="" />
+
       <div class="description">
         <h3 class="name-surname">Yusuf Atmaca</h3>
         <p>
@@ -19,28 +20,38 @@
         </p>
         <address>
           <a href="mailto:yusufatmaca@protonmail.com"
-            >yusufatmaca@protonmail.com</a>
-          <a href="https://twitter.com/@belitler">twitter.com/@belitler</a>
-          <a href="https://belitler.medium.com/">belitler.medium.com</a>
-          <a href="https://github.com/yusufatmaca">github.com/yusufatmaca</a>
+            >yusufatmaca@protonmail.com</a
+          ><br />
+          <a href="https://twitter.com/@belitler">twitter.com/@belitler</a
+          ><br />
+          <a href="https://belitler.medium.com/">belitler.medium.com</a><br />
+          <a href="https://github.com/yusufatmaca">github.com/yusufatmaca</a
+          ><br /><br>
         </address>
       </div>
     </div>
+    <div class="night-mode">
+    <button onclick="changeNightMode(true);"><img class="dark-theme-logo" src="dark-mode-logo.svg" alt="" style="cursor: pointer;">
+    </div>
+    </button>
+    <div class="menu">
+      <hr />
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="latest-posts.html"><u>Latest Posts</u></a> |
+        <a href="bookmarks.html">Bookmarks</a>
+      </nav>
+      <hr />
+    </div>
   </header>
-  <div class="menu">
-    <br />
-    <hr />
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="latest-posts.html"><u>Latest Posts</u></a> |
-      <a href="bookmarks.html">Bookmarks</a>
-    </nav>
-    <hr />
-  </div>
-
   <main>
     <h2>My Latest Posts</h2>
     <p>I try to write about computer science, software development, politics, literature, etc.</p>
   </main>
+  <script>
+    function changeNightMode(t){
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
 </html>
