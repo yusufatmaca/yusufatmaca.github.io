@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: auto;
   margin-top: 50px;
   width: 50%;
@@ -52,6 +52,7 @@ address {
 a {
   text-decoration: none;
   font-style: normal;
+  transition: background-color 0.1s;
 }
 
 nav {
