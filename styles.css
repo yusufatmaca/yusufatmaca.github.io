@@ -47,6 +47,7 @@ address {
 .my-picture {
   width: 125px;
   margin-right: 25px;
+  border-radius: 25px;
 }
 
 a {
