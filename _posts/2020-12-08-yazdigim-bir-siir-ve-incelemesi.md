@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Yazdığım Bir Şiir ve İncelemesi"
-categories: poetry
 ---
+
 Hem kendi şiirimi yazıyor, hem de otopsisini yapıyorum...
 
 Arada canım şiir yazmak istiyor ve o an hangi konu hakkında bir şeyler düşünüyorsam, o konuyla ilgili direkt bir şeyler karalamaya çalışıyorum.

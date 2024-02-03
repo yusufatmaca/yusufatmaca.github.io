@@ -1,14 +1,15 @@
 ---
 layout: post
 title: "Sen Miydin O, Yalnızlığım Mıydı Yoksa?"
-categories: poetry
 ---
 
 Kendi blog sayfama, daha önce yazmış olduğum yazıları geçirirken işe ilk Can Yücel’in Sevgi Duvarı şiirindeki bir dizesinden anladıklarımı yazdığım yazı ile başlayalım...
 
 
 ![Güler Yücel ve Can Yücel çifti](https://cdn1.img.sputniknews.com.tr/img/104164/09/1041640900_0:0:2001:1132_600x0_80_0_0_c3adcd9ff5e3566d7bbf75c7429d2416.jpg.webp)
-<figcaption>Güler Yücel ve Can Yücel Çifti</figcaption>\
+<figcaption>Güler Yücel ve Can Yücel Çifti</figcaption>
+
+
 Önce şiiri bir bütün olarak paylaşayım.
 
 >Sen miydin o, yalnızlığım mıydı yoksa\
