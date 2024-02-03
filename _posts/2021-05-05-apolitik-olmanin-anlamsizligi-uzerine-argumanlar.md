@@ -16,7 +16,7 @@ Ben de, bu açıklama üzerine bir şeyler karalamak istedim, çünkü benim iç
 Kerem Cankoçak hocamız, 25 Şubat 2020'de Evrensel Gazetesi’ne yaptığı açıklamada şunları diyordu:
 
 ![Kerem Cankoçak Evrensel Gazetesi](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*y8MdkMUwPiHKdaf4.png)
-<figcaption>[Kaynak](https://www.evrensel.net/haber/398050/prof-dr-kerem-cankocak-evrim-yer-cekimi-gibi-bir-gercektir)
+<figcaption>Kaynak: https://www.evrensel.net/haber/398050/prof-dr-kerem-cankocak-evrim-yer-cekimi-gibi-bir-gercektir
 </figcaption>
 
 ---
