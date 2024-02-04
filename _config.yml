@@ -2,15 +2,15 @@ title: Yusuf Atmaca # The title of the blog
 author: Yusuf Atmaca # Your name
 
 url: https://yusufatmaca.github.io/ # this is your site's root address.
-description: 
-favicon: "./favicon.ico" # set the favicon of the site
+description: at a different level of abstraction
+favicon: "favicon.ico" # set the favicon of the site
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
   avatar_url: "https://pbs.twimg.com/profile_images/1750471473351815168/dxoP0ExL_400x400.jpg" # avatar in about page
-  about_you: i'm a computer scientist. # short description about you in about page
+  about_you: wants to be a computer scientist. # short description about you in about page
   date_format: "%b %d" # date format of posts in home page
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 
