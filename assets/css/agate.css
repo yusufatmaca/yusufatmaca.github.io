@@ -19,8 +19,8 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #333;
-  color: white;
+  background: #ffffff;
+  color: black;
 }
 
 .hljs-name,
@@ -46,7 +46,7 @@
 
 .hljs-string,
 .hljs-bullet {
-  color: #a2fca2;
+  color: #7f87e7;
 }
 
 .hljs-type,
@@ -56,7 +56,7 @@
 .hljs-quote,
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #ffa;
+  color: black;
 }
 
 .hljs-number,
@@ -74,12 +74,12 @@
 .hljs-comment,
 .hljs-deletion,
 .hljs-code {
-  color: #888;
+  color: black;
 }
 
 .hljs-regexp,
 .hljs-link {
-  color: #c6b4f0;
+  color: #7c52de;
 }
 
 .hljs-meta {
