@@ -1,0 +1,157 @@
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #e6f2ff; /* light blue */
+    padding: 10px 0;
+    border-radius: 4px;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    display: inline;
+    margin: 0 12px;
+}
+.menu li a {
+    font-size: 14px;
+    color: #3366cc;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background-color: #e6f2ff;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+p {
+    margin: 10px 0;
+}
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    padding-left: 20px;
+}
+li {
+    margin: 8px 0;
+}
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 5px 0;
+}
+.header-info {
+    color: #666;
+    font-size: 14px;
+}
+.pub-entry {
+    margin: 15px 0;
+}
+.pub-year {
+    color: #666;
+    margin-right: 10px;
+}
+
+.katex-html {
+  display: none;
+}
+pre[class*="language-"] {
+  margin-left: 20px;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+iframe {
+  display: block;     /* iframe'i blok eleman yap */
+  margin-left: auto;  /* otomatik soldan boşluk */
+  margin-right: auto; /* otomatik sağdan boşluk */
+  max-width: 100%;    /* taşmayı önlemek için genişliği sınırlı tut */
+}
+
+.katex-display {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+  font-size: 18px;
+}
+
+.post-date {
+  font-size: 0.8em;
+  color: #666666;
+  font-style: italic;
+}
+
+.blog-date {
+    color: #666;
+    font-size: 12px;
+    text-align: right;
+    font-style: italic
+}
+
+.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-list li {
+    margin-bottom: 12px;
+}
+
+.blog-date {
+    color: #888;
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-size: 14px;
+}
+.header {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.header img {
+    float: left;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+}
+.header-text {
+    float: left;
+    padding-top: 10px;
+}
+.header-text h1 {
+    margin-top: 0;
+}
+
