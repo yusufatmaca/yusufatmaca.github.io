@@ -1,7 +1,6 @@
 baseURL = "https://yusufatmaca.github.io/"
 languageCode = "eng"
 title = "Yusuf Atmaca"
-theme = ""
 
 [params]
   description = "Programming, literature, etc."
