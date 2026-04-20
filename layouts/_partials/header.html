@@ -1,0 +1,17 @@
+<header class="site-header">
+  <img src="/me.jpg" alt="{{ site.Params.author }}" class="avatar">
+  <div class="identity">
+    <h1><a href="/">{{ site.Title }}</a></h1>
+    <ul class="contact">
+      <li>email: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></li>
+      <li>github: <a href="https://github.com/{{ site.Params.github }}">{{ site.Params.github }}</a></li>
+      <li>linkedin: <a href="https://linkedin.com/{{ site.Params.linkedin }}">{{ site.Params.linkedin }}</a></li>
+    </ul>
+  </div>
+</header>
+
+<nav class="main-nav">
+  {{ range $i, $e := site.Menus.main }}
+    {{ if $i }} · {{ end }}<a href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>

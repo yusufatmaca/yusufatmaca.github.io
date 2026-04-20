@@ -1,0 +1,45 @@
+baseURL = "https://yusufatmaca.github.io/"
+languageCode = "eng"
+title = "Yusuf Atmaca"
+theme = ""
+
+[params]
+  description = "Programming, literature, etc."
+  author = "Yusuf Atmaca"
+  email = "33yusufatmaca@gmail.com"
+  github = "yusufatmaca"
+  linkedin = "in/yusufatmaca97"
+  cv = "/yusuf-atmaca-cv.pdf"
+
+[markup]
+[markup.highlight]
+    noClasses = false
+    lineNos = "table"
+    lineNumbersInTable = true
+    tabWidth = 2
+    style = "github-dark"
+
+[taxonomies]
+  tag = "tags"
+
+# Menü: üst nav için
+[[menu.main]]
+  name = "home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "programming"
+  url = "/programming/"
+  weight = 2
+[[menu.main]]
+  name = "literature"
+  url = "/literature/"
+  weight = 3
+[[menu.main]]
+  name = "reading"
+  url = "/reading/"
+  weight = 5
+[[menu.main]]
+  name = "cv"
+  url = "/yusuf-atmaca-cv.pdf"
+  weight = 6

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <main>
+    {{ partial "header.html" . }}
+    <hr>
+    {{ block "main" . }}{{ end }}
+    <hr>
+    <footer>
+      <small>© {{ now.Year }} {{ site.Params.author }} · <a href="/index.xml">rss</a></small>
+    </footer>
+  </main>
+</body>
+</html>

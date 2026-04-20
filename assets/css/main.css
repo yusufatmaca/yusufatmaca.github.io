@@ -1,0 +1,302 @@
+:root {
+  /* Gruvbox Dark (hard) */
+  --bg:        #1d2021;   /* bg0_h — hard dark */
+  --bg-soft:   #282828;   /* bg0     — standart bg */
+  --bg-alt:    #3c3836;   /* bg1     — kod bloğu, tablo başlığı */
+  --fg:        #ebdbb2;   /* fg      — gövde metni, krem */
+  --fg-dim:    #d5c4a1;   /* fg2     — ikincil metin */
+  --muted:     #a89984;   /* fg4 / gray — meta, tarih, nav */
+  --rule:      #504945;   /* bg2     — ayırıcı çizgiler */
+
+  /* vurgular — gruvbox'ın signature renkleri */
+  --red:       #fb4934;
+  --green:     #b8bb26;
+  --yellow:    #fabd2f;
+  --blue:      #83a598;
+  --purple:    #d3869b;
+  --aqua:      #8ec07c;
+  --orange:    #fe8019;
+
+  /* rol atamaları */
+  --accent:    var(--blue);    /* linkler — gruvbox mavisi */
+  --code-bg:   var(--bg-alt);
+
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --mono:  "JetBrains Mono", "SF Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+}
+
+html { background: var(--bg); }
+
+body {
+  color: var(--fg);
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 0 1.25rem;
+}
+
+/* başlıklar */
+h1, h2, h3, h4 {
+  font-weight: 800;
+  line-height: 1.25;
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+}
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.1rem; }
+
+h1 a, h1 a:visited { color: var(--fg); text-decoration: none; }
+
+/* linkler */
+a, a:visited {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-color 180ms ease-in-out;
+}
+a:hover {
+  text-decoration-color: var(--accent);
+}
+
+/* nav */
+header nav { margin-top: 0.5rem; font-size: 0.95rem; color: var(--muted); }
+header nav a { color: var(--muted); text-decoration: none; }
+header nav a:hover { color: var(--accent); background: none; text-decoration: underline; }
+
+/* ayırıcı */
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+
+/* yazı listesi */
+.post-list { list-style: none; padding: 0; }
+.post-list li { margin: 0.4rem 0; font-variant-numeric: tabular-nums; }
+.post-list time { color: var(--muted); font-family: var(--mono); font-size: 0.9rem; }
+.post-list .section-tag {
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.85rem;
+}
+/*.section-tag { color: var(--muted); font-family: var(--mono); font-size: 0.85rem; }*/
+
+/* yazı meta */
+.meta { color: var(--muted); font-size: 0.9rem; margin-top: -0.4rem; }
+
+/* kod */
+code, pre, kbd, samp {
+  font-family: var(--mono);
+  font-size: 0.92em;
+}
+
+p code, li code {
+  background: transparent;
+  padding: 0 0.15em;
+  border-bottom: 1px dotted var(--rule);
+  border-radius: 0;
+}
+
+pre {
+  background: var(--code-bg);
+  padding: 1rem;
+  overflow-x: auto;
+  border-left: 2px solid var(--rule);
+  line-height: 1.45;
+}
+pre code { background: none; padding: 0; }
+
+blockquote {
+  border-left: 3px solid var(--yellow);
+  margin: 1.5rem 0;
+  padding: 0.2rem 1.2rem;
+  color: var(--fg-dim);
+  font-style: italic;
+}
+
+/* tablo */
+table { border-collapse: collapse; margin: 1rem 0; }
+th, td { border: 1px solid var(--rule); padding: 0.4rem 0.8rem; }
+th { background: var(--bg-alt); color: var(--yellow); }
+
+/* resim */
+img { max-width: 100%; height: auto; }
+
+/* footer */
+footer { color: var(--muted); font-size: 0.85rem; margin-top: 2rem; }
+footer a { color: var(--muted); }
+
+/* chroma syntax — gruvbox */
+.chroma { color: var(--fg); }
+
+/* keywords: if, for, class, std, namespace, include... */
+.chroma .k, .chroma .kd, .chroma .kr, .chroma .kn { color: var(--red); }
+
+/* types: int, void, bool, std::atomic... */
+.chroma .kt, .chroma .nc, .chroma .nn { color: var(--yellow); }
+
+/* strings */
+.chroma .s, .chroma .s1, .chroma .s2, .chroma .sc { color: var(--green); }
+.chroma .se { color: var(--orange); }   /* string escape: \n \t */
+
+/* numbers */
+.chroma .mi, .chroma .mf, .chroma .mh, .chroma .mo { color: var(--purple); }
+
+/* comments */
+.chroma .c, .chroma .c1, .chroma .cm, .chroma .cs {
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* preprocessor: #include, #define */
+.chroma .cp, .chroma .cpf { color: var(--aqua); }
+
+/* function names */
+.chroma .nf, .chroma .nb { color: var(--aqua); }
+
+/* operators, punctuation, identifiers — gövde rengi kalsın */
+.chroma .o, .chroma .p, .chroma .n, .chroma .nx,
+.chroma .na, .chroma .nv { color: var(--fg); }
+
+/* satır numaraları — soluk gruvbox grisi */
+.chroma .lnt, .chroma .ln { color: var(--rule); }
+
+
+.highlight {
+  background: #161616;          /* gövdeden biraz daha koyu — hafif çökmüş alan */
+  margin: 1.5rem 0;
+  overflow: hidden;
+  font-size: 0.9em;             /* gövdeden bir tık küçük — kitap listing'i hissi */
+}
+
+pre {
+  line-height: 1.5;
+}
+
+/* dil belirtilmemiş pre blokları için */
+pre:not(.chroma pre) {
+  background: #161616;
+  padding: 1rem;
+  overflow-x: auto;
+  font-size: 0.9em;
+}
+
+.highlight .chroma {
+  /* dış sarmalayıcı — tabloyu düzgün hizala */
+  display: block;
+  overflow-x: auto;
+}
+
+.chroma table {
+  border-collapse: collapse;
+  margin: 0;
+  width: 100%;
+}
+
+.chroma table td {
+  padding: 0;
+  border: none;
+  vertical-align: top;
+}
+
+.chroma .lntd:first-child {
+  width: 1%;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  /* border-right kaldırıldı */
+}
+
+.chroma .lntd:first-child pre {
+  padding: 1rem 0.75rem 1rem 1rem;
+  margin: 0;
+  border: none;
+  background: transparent;
+  color: var(--rule);        /* #555 yerine gruvbox bg2 */
+  text-align: right;
+}
+
+.chroma .lntd:last-child pre {
+  padding: 1rem 1rem 1rem 0.5rem;
+  margin: 0;
+  border: none;
+  background: transparent;
+}
+
+/* numaraların kendi span'ı */
+.chroma .lnt, .chroma .ln {
+  color: #555;
+  margin-right: 0.4rem;
+}
+
+/* satır numarası ile kod arasına ince bir ayırıcı (opsiyonel ama şık) */
+.chroma .lntd:first-child {
+  border-right: 1px solid var(--rule);
+}
+
+
+/* site başlığı: fotoğraf + kimlik */
+.site-header {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+  /* keskin kenarlı bırakıyoruz — old-school hissiyat.
+     yuvarlak istersen: border-radius: 50%; */
+  flex-shrink: 0;
+}
+
+.identity { flex: 1; min-width: 0; }
+
+.identity h1 { margin-top: 0; margin-bottom: 0.6rem; }
+
+.contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.contact li { margin: 0; }
+
+.contact a { color: var(--accent); }
+
+/* ana nav — header'ın altında */
+.main-nav {
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.main-nav a { color: var(--muted); text-decoration: none; }
+
+.main-nav a:hover {
+  color: var(--accent);
+  background: none;
+  text-decoration: underline;
+}
+
+/* mobil: fotoğrafı üste al */
+@media (max-width: 560px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .avatar { width: 110px; height: 110px; }
+}

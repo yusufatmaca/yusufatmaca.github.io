@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <section>
+    {{ .Content }}
+  </section>
+
+  <ul class="post-list">
+    {{ range first 15 (where site.RegularPages "Section" "in" (slice "programming" "literature" "reading")) }}
+      <li>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+        &nbsp;<span class="section-tag">[{{ .Section }}]</span>
+        &nbsp;<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
