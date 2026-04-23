@@ -171,7 +171,7 @@ footer a { color: var(--muted); }
 .highlight {
   background: #161616;          /* gövdeden biraz daha koyu — hafif çökmüş alan */
   margin: 1.5rem 0;
-  overflow: hidden;
+  overflow-x: auto;
   font-size: 0.9em;             /* gövdeden bir tık küçük — kitap listing'i hissi */
 }
 
@@ -293,10 +293,88 @@ pre:not(.chroma pre) {
 
 /* mobil: fotoğrafı üste al */
 @media (max-width: 560px) {
+  body { font-size: 16px; }
+
+  main {
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+
   .site-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
   .avatar { width: 110px; height: 110px; }
+
+  /* başlıkları mobilde biraz küçült */
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.35rem; }
+  h3 { font-size: 1.15rem; }
+
+  /* kod bloklarını daha küçük göster — mobilde satırlar sığsın */
+  .highlight, pre:not(.chroma pre) {
+    font-size: 0.8em;
+  }
+}
+
+figure.fig {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+figure.fig img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid var(--rule);   /* hafif çerçeve — kitap baskısı hissi */
+}
+
+figure.fig figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.4;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.fig .fig-num {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--fg-dim);
+  margin-right: 0.2em;
+}
+
+figure.video {
+  margin: 2rem 0;
+}
+
+figure.video .video-wrap {
+  position: relative;
+  padding-bottom: 56.25%;   /* 16:9 en/boy oranı */
+  height: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+figure.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+figure.video figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
 }

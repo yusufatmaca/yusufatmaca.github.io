@@ -1,0 +1,10 @@
+<figure class="fig">
+  <img src="{{ .Get "src" }}"
+       alt="{{ .Get "alt" | default (.Get "caption") }}"
+       {{ with .Get "width" }}width="{{ . }}"{{ end }}>
+  {{ with .Get "caption" }}
+    <figcaption>
+      {{ with $.Get "num" }}<span class="fig-num">Fig. {{ . }}.</span> {{ end }}{{ . | markdownify }}
+    </figcaption>
+  {{ end }}
+</figure>

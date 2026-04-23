@@ -5,7 +5,7 @@ title = "Yusuf Atmaca"
 [params]
   description = "Programming, literature, etc."
   author = "Yusuf Atmaca"
-  email = "33yusufatmaca@gmail.com"
+  email = "yusufatmaca@protonmail.com"
   github = "yusufatmaca"
   linkedin = "in/yusufatmaca97"
   cv = "/yusuf-atmaca-cv.pdf"
@@ -38,7 +38,3 @@ title = "Yusuf Atmaca"
   name = "reading"
   url = "/reading/"
   weight = 5
-[[menu.main]]
-  name = "cv"
-  url = "/yusuf-atmaca-cv.pdf"
-  weight = 6

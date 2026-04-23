@@ -1,0 +1,15 @@
+<figure class="video">
+  <div class="video-wrap">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/{{ .Get 0 | default (.Get "id") }}{{ with .Get "start" }}?start={{ . }}{{ end }}"
+      title="{{ .Get "caption" | default "YouTube video" }}"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+  {{ with .Get "caption" }}
+    <figcaption>
+      {{ with $.Get "num" }}<span class="fig-num">Video {{ . }}.</span> {{ end }}{{ . | markdownify }}
+    </figcaption>
+  {{ end }}
+</figure>
