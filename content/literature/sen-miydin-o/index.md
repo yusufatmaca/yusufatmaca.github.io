@@ -1,7 +1,6 @@
 ---
 title: "Sen Miydin O? Yalnızlığım Miydi Yoksa?"
 date: 2021-10-14
-tags: [Can Yücel]
 ---
 
 Kendi blog sayfama, daha önce yazmış olduğum yazıları geçirirken işe ilk Can Yücel’in Sevgi Duvarı şiirindeki bir dizesinden anladıklarımı yazdığım yazı ile başlayalım…
