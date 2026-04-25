@@ -1,5 +1,5 @@
 baseURL = "https://yusufatmaca.github.io/"
-languageCode = "eng"
+languageCode = "en"
 title = "Yusuf Atmaca"
 
 [params]
@@ -11,13 +11,21 @@ title = "Yusuf Atmaca"
   cv = "/yusuf-atmaca-cv.pdf"
 
 [markup]
-[markup.highlight]
+  [markup.highlight]
     noClasses = false
     lineNos = "table"
     lineNumbersInTable = true
     tabWidth = 2
     style = "github-dark"
-
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block  = [["\\[", "\\]"], ["$$", "$$"]]
+        inline = [["\\(", "\\)"], ["$", "$"]]
 [taxonomies]
   tag = "tags"
 
